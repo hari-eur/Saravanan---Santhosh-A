@@ -1,0 +1,104 @@
+//Assignment 1
+
+#include <stdio.h>
+
+int main()
+
+{
+
+    int a,b;
+
+    printf("Enter the number: ");
+
+    scanf("%d %d",&a, &b);
+
+    
+
+    // Increment and Decrement operator
+
+    
+
+    printf("Pre Increment of a is %d\n", ++a); //Pre Increment of a 
+
+    printf("a is %d\n", a);
+
+    printf("Post Increment of a is %d\n", a++); //Post Increment of a 
+
+    printf("a is %d\n", a);
+
+    printf("Pre Decrement of a is %d\n Post Decrement of a is %d\n", --a, a--); // Right to left associative
+
+    printf("A is %d\n",a);
+
+    
+
+    // Arithmetic operator
+
+    printf("Additon of a and b is %d\n", a+b); //Additon 
+
+    printf("Subtraction of a and b is %d\n", a-b); //Subtraction
+
+    printf("Multiplication of a and b is %d\n", a*b); // Multiplication
+
+    printf("Division of a and b is %d\n", a/b); // Division
+
+    printf("Modulo Division of a and b is %d\n", a%b); // Modulo Division
+
+    
+
+    //Logical operator
+
+    printf("a && b is %d\n", a&&b); //Logical AND
+
+    printf("a || b is %d\n", a||b); // Logical OR 
+
+    printf("!a is %d\n", !a); // Logical NOT 
+
+    
+
+    //Bitwise operator 
+
+    printf(" a&b is %x\n", a&b); //Bitwise AND
+
+    printf("a|b is %x\n", a|b); //Bitwise OR 
+
+    printf("a^b is %x\n", a^b); //Bitwise XOR
+
+    printf("~a is %x\n", ~a); //Bitwise Compliment
+
+    printf("a<<b is %x\n", a<<b); // Left Shift
+
+    printf("a>>b is %x\n", a>>b); // Right Shift
+
+    
+
+    //Comparison operator
+
+    printf("a is greater than b: %d\n", a>b); //greater than
+
+    printf("a is greater than or equal to b: %d\n", a>=b);//greater than or equal
+
+    printf("a is less than b: %d\n", a<b);// less than
+
+    printf("a is less than or equal to b: %d\n", a<=b);// less than or equal
+
+    printf("a is equal to b: %d\n", a==b);// equal
+
+    printf("a is not equal to b: %d\n", a!=b);// not equal
+
+    
+
+    //ternary operator
+
+    
+
+    int x;
+
+    x=a>b?a:b; 
+
+    printf("%d\n",x);
+
+    return 0;
+
+}
+
