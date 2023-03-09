@@ -1,0 +1,104 @@
+/*1.write a program which covers all control statements, switch case syntax and its functionality.
+
+                Program statement : 
+                1. User should be able to view list of banks.
+                 2. User should be able select a bank and to view its Banking operation and its various account details(Savings, Current, demat)
+                 3. User should be able to list all the benefits of choosen account(interest etc).
+*/
+
+#include <stdio.h>
+
+int main()
+{
+    printf("y - yes\n n - no \n");
+    printf("Do you want to see the bank list: y or n\n");
+    char ch;
+    scanf("%c",&ch);
+    if(ch=='y')
+    {
+        printf("The Bank listed here are\n");
+        printf("1.IOB\n");
+        printf("2.SBI\n");
+        printf("3.HDFC\n");
+    }
+    printf("Select the bank from(1 to 3):");
+    int select;
+    scanf("%d",&select);
+    switch (select)
+    {
+        case 1:
+            printf("IOB: This is a public sector bank runs by the Government of India and they are providing three types of account to the user\n");
+            printf("1.Saving account\n 2.Current account\n 3.Demat account\n");
+            printf("select the account from(1 to 3) to see it's benifits :");
+            int account;
+            scanf("%d",&account);
+            if(account==1)
+            {
+                printf("Saving account\n");
+                printf("IOB provides an interset rate of 7.5 percent for FD of 800 days\n");
+            }
+            else if(account==2)
+            {
+                printf("Current account\n");
+                printf("IOB provides no charges on IMPS Transcations\n");
+            }
+            else if(account==3)
+            {
+                printf("Demat account\n");
+                printf("IOB charges 1000 rupees for creating a new demat account and added many feature over the app");
+            }
+            
+            break;
+            
+        case 2:
+            printf("SBI: This is a public sector bank runs by the Government of India and they are providing three types of account to the user\n");
+            printf("1.Saving account\n 2.Current account\n 3.Demat account\n");
+            printf("select the account from(1 to 4) to see it's benifits :");
+            int account1;
+            scanf("%d",&account1);
+            if(account1==1)
+            {
+                printf("Saving account\n");
+                printf("SBI provides an interset rate of 8 percent for FD of 800 days\n");
+            }
+            else if(account1==2)
+            {
+                printf("Current account\n");
+                printf("SBI provides no charges on IMPS Transcations for first 20 Transcations\n");
+            }
+            else if(account1==3)
+            {
+                printf("Demat account\n");
+                printf("SBI charges 1000 rupees for creating a new demat account and added many feature over the app");
+            }
+            
+            break;
+        
+        case 3:
+            printf("HDFC: This is a private sector bank and they are providing three types of account to the user\n");
+            printf("1.Saving account\n 2.Current account\n 3.Demat account\n");
+            printf("select the account from(1 to 4) to see it's benifits :");
+            int account2;
+            scanf("%d",&account2);
+            if(account2==1)
+            {
+                printf("Saving account\n");
+                printf("HDFC provides an interset rate of 8.5 percent for FD of 800 days\n");
+            }
+            else if(account2==2)
+            {
+                printf("Current account\n");
+                printf("SBI provides no charges on IMPS Transcations\n");
+            }
+            else if(account2==3)
+            {
+                printf("Demat account\n");
+                printf("HDFC provides free Demat account while open an Saving account");
+            }
+            break;
+    }
+    
+    
+
+    return 0;
+}
