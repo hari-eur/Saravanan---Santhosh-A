@@ -1,0 +1,24 @@
+#include <stdio.h>
+#define print(data1) printf("welcome to %s", data1);
+int main()
+{
+  char data1[100]:
+  scanf("%s",data1);
+  print(data1);
+  return 0;
+}
+
+#include <stdio.h>
+#define print(data1,data2) printf("Hello to %s: welcome to %s", data1, data2);
+int main()
+{
+    char data1[100],data2[101];
+    scanf("%s",data1);
+    scanf("%s",data2);
+    print(data1, data2);
+
+    return 0;
+}
+
+
+
