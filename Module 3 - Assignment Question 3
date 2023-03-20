@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+char* sort(char* s)
+{
+    int len = strlen(s);
+    char c[len + 1];
+
+    strcpy(c, s);
+
+    qsort(c, len, sizeof(char), strcmp);
+
+    int al_c = 0, nu_c = 0;
+
+    while (c[al_c] < 97)
+    {
+        al_c++;
+    }    
+    for (int i = 0; i < len; i++)
+    {
+        if (s[i] < 97)
+        {
+            s[i] = c[nu_c++];
+        }
+        else
+        {
+            s[i] = c[al_c++];
+        }
+    }
+    return s;
+}
+
+int main()
+{
+    char s[101];
+    scanf("%s",s);
+    printf("%s", sort(s));
+
+    return 0;
+}
