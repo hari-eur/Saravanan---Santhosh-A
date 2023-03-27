@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+int main()
+{
+    char str[10];
+    scanf("%[^\n]s",str);
+    int i=0,low=0,upp=0,special=0,num=0;
+    int length=0;
+    while(i!='\0')
+    {
+        length++;
+        if(str[i]>='a'&& str[i]<='z' )
+        {
+            low++;            
+        }
+        else if(str[i]>='A' && str[i]<='Z')
+        {
+            upp++;
+        }
+        else if(str[i]>=48 && str[i]<=57)
+        {
+            num++;
+        }
+        else if(str[i]>=33 && str[i]<=47)
+        {
+            special++;
+        }
+    }
+    printf("%d",i);
+    printf("%d",low);
+    printf("%d",upp);
+    printf("%d",special);
+    printf("%d",num);
+    if(length==8 && low!=0 && upp!=0 && special!=0 && num!=0)
+    {
+        printf("All the condition satisfied");
+    }
+    
+    else
+    {
+        printf("condition not satisfied");
+        
+    }
+    return 0;
+}
