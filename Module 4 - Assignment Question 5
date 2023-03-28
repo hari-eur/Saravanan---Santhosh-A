@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main() {
+    int size;
+    scanf("%d",&size);
+    int *ptr=(int*)malloc(sizeof(int)*size);
+    if(ptr==NULL)
+    {
+        printf("Heap is full");
+        exit(19);
+    }
+    int i;
+    for(i=0;i<size;i++)
+    {
+        scanf("%d",&ptr[i]);
+    }
+    for(i=0;i<size;i++)
+    {
+        printf("%d ",ptr[i]);
+    }
+    free(ptr);
+    return 0;
+}
+
+
