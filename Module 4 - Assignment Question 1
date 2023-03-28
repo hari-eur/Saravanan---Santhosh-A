@@ -1,0 +1,15 @@
+
+//segmentation fault
+
+int main() {
+    int *ptr = NULL;
+    *ptr = 10; //
+    return 0;
+}
+
+//Debugging
+
+gdb ./a.out
+(gdp) r
+(gdp) quit
+
